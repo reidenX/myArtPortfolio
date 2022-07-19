@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../img/sharon-mccutcheon-NkQD-RHhbvY-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav ul {
+  list-style: none;
+  gap: 2em;
+  font-size: 0.8rem;
+}
+
+nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all ease-in-out 350ms;
+  border-radius: 10px;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: #540bcb;
+  transform: scale(0);
+  transition: all ease-in-out 350ms;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+footer {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+footer,
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.Illustrations {
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+}
+
+footer p {
+  font-size: 0.5rem;
+}
+
+@media (min-width: 390px) {
+  nav ul {
+    gap: 1em;
+    font-size: 1rem;
+  }
+
+  nav li a {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 500px) {
+  nav ul {
+    gap: 3em;
+  }
+}
+
+@media (min-width: 640px) {
+  nav ul {
+    gap: 5em;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav li a:hover::after {
+    transform: scale(1);
+  }
+}

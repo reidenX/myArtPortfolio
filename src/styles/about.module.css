@@ -1,0 +1,70 @@
+.aboutPage {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 10%;
+}
+
+.aboutPage h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.aboutPage ul {
+  list-style: none;
+  display: flex;
+}
+
+.aboutPage a {
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.aboutPage p {
+  font-size: 0.7rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.aboutPage p,
+.aboutPage ul {
+  margin-bottom: 30px;
+}
+
+.aboutPage li,
+.aboutPage a {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 780px) {
+  .aboutPage {
+    padding-inline: 25%;
+  }
+
+  .aboutPage h1 {
+    font-size: 1.5rem;
+  }
+
+  .aboutPage p {
+    font-size: 1rem;
+  }
+
+  .aboutPage ul {
+    gap: 50px;
+  }
+
+  .aboutPage p,
+  .aboutPage ul {
+    margin-bottom: 60px;
+  }
+
+  .aboutPage li,
+  .aboutPage a {
+    font-size: 1rem;
+  }
+}

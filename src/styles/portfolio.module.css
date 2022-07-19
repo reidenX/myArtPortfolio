@@ -1,0 +1,61 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  height: 300px;
+  width: 90%;
+}
+
+.project h1,
+.project p,
+.project a {
+  color: white;
+}
+
+.project h1 {
+  margin-top: 20px;
+}
+
+.project p {
+  margin-bottom: auto;
+  margin-top: 10px;
+}
+
+.project span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project span a {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 450px) {
+  .project div {
+    height: 600px;
+  }
+}
+
+@media (min-width: 650px) {
+  .project div {
+    height: 680px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .project {
+    flex-direction: row;
+  }
+}
