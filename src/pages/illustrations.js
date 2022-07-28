@@ -9,6 +9,7 @@ import five from "../img/5.jpg"
 import six from "../img/6.jpg"
 import seven from "../img/7.jpg"
 import eight from "../img/8.jpg"
+import nine from "../img/9.jpg"
 
 export default function illustrations() {
   const artworks = [
@@ -35,6 +36,10 @@ export default function illustrations() {
     },
     {
       img: `url(${eight})`,
+    },
+    ,
+    {
+      img: `url(${nine})`,
     },
   ]
 
